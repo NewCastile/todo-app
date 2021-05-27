@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
+  <title>Todo App</title>
+</head>
+<body>
+  <div class="container">
+    <div class="side-bar">
+      <div class="wrapper">
+        <div class="header">
+          <h1>Todo App</h1>
+        </div>
+        <div class="card-body">
+          <div class="card-header">
+            <p>Projects</p>
+          </div>
+          <div class="card-content">
+            <div class='list-container'>
+              <ul class="rendered-list">  
+              </ul>
+            </div>
+            <button data-target-form="#side-bar-form" class="btn add-btn add-project-btn">Add project</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="wrapper">
+        <div class="todo-list">
+        </div>
+        <button class="btn add-btn add-todo-btn">Add Todo</button>
+      </div>
+    </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>

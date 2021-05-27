@@ -1,0 +1,148 @@
+* {
+	font-family:Helvetica, Arial, sans-serif;
+	font-weight:700;
+	font-size:1rem;
+	color: rgb(40, 40, 40);
+}
+
+html,body {
+	height:100%;
+	width:100%;
+	margin:0;
+	padding:0;
+	overflow-x: hidden;
+	background: linear-gradient(
+    to right bottom,
+    rgb(255, 255, 255),
+    rgb(183, 183, 183)
+  	);
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+.container {
+	overflow-x: hidden;
+	display:flex;
+	flex-wrap:wrap;
+	width:80%;
+	margin:0 auto;
+}
+
+.container .side-bar {
+	flex:1 1 30%;
+	min-width: 350px;
+}
+
+.container .content {
+	flex:1 1 70%;
+}
+
+.content > * + * {
+	margin-top: 1.5rem;
+}
+
+.wrapper {
+	padding: 30px;
+	margin: 30px;
+	border-radius: 15px;
+	background: linear-gradient( to right bottom, 
+	rgba(255, 255, 255, 0.7), 
+	rgba(255, 255, 255, 0.3) 
+	);
+	box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+}
+
+.wrapper > * + * {
+	margin-top: 1.5rem;
+}
+
+.todo {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.todo .info {
+	flex: 1 1 60%;
+	min-width: 380px;
+}
+
+.todo .info > * {
+	padding-right: 15px;
+}
+
+.todo .buttons {
+	flex: 1 1 40%;
+}
+
+.rendered-list {
+	padding: 5px;
+    list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.project {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 10px;
+	width: 100%;
+	max-width: 350px;
+}
+
+.project.active {
+	background: rgb(188, 187, 187);
+	color: rgb(255, 255, 255);
+}
+
+.rendered-list > * + * {
+	margin-top: 1rem;
+}
+
+.edit-project-form {
+	display: block;
+}
+
+.btn {
+	text-decoration: none;
+	border-radius: 10px;
+	border-style: none;
+	padding: 10px;
+	margin: 2px;
+	color: white;
+}
+
+.delete-btn {
+	background: rgb(252, 86, 86);
+}
+
+.edit-btn {
+	background: rgb(0, 157, 255);
+}
+
+.add-btn, .form-submit-btn {
+	background: rgb(90, 242, 120);
+}
+
+.go-back-btn {
+	background: rgb(122, 122, 122);
+}
+
+form > * + * {
+	margin-top: 1em;
+}
+
+input + input {
+	margin-left: 1.5rem;
+}
+
+form input {
+	width: 100%;
+	border: 1px solid rgb(176, 176, 176);
+	border-radius: 5px;
+}
