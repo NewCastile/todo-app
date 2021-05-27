@@ -137,12 +137,15 @@ form > * + * {
 	margin-top: 1em;
 }
 
-input + input {
+input {
+	border: 1px solid rgb(176, 176, 176);
+	border-radius: 5px;
+}
+
+.add-todo-form input + input {
 	margin-left: 1.5rem;
 }
 
-form input {
+.add-project-form input {
 	width: 100%;
-	border: 1px solid rgb(176, 176, 176);
-	border-radius: 5px;
 }
